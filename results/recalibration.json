@@ -1,0 +1,503 @@
+{
+  "split": "even rows = test, odd rows = fit (20 tickets per intent each)",
+  "fit": {
+    "n": 1540,
+    "accuracy": 0.8701298701298701,
+    "mean_conf": 0.8156830505784617,
+    "ece_equal_10": 0.05985695805239352,
+    "at_0.90": {
+      "threshold": 0.9,
+      "n": 778,
+      "coverage": 0.5051948051948052,
+      "accuracy": 0.980719794344473,
+      "wilson95_lo": 0.9684340055227639,
+      "wilson95_hi": 0.9882816963130795
+    },
+    "at_0.95": {
+      "threshold": 0.95,
+      "n": 547,
+      "coverage": 0.3551948051948052,
+      "accuracy": 0.9945155393053017,
+      "wilson95_lo": 0.9840007006234663,
+      "wilson95_hi": 0.9981330718747696
+    },
+    "cutoffs_point": {
+      "0.95": {
+        "threshold": 0.6754,
+        "n": 1206,
+        "coverage": 0.7831168831168831,
+        "accuracy": 0.9502487562189055,
+        "wilson95_lo": 0.9364840823634588,
+        "wilson95_hi": 0.9611541925379403,
+        "target": 0.95,
+        "rule": "point_estimate"
+      },
+      "0.98": {
+        "threshold": 0.891,
+        "n": 814,
+        "coverage": 0.5285714285714286,
+        "accuracy": 0.9803439803439803,
+        "wilson95_lo": 0.9683101724685188,
+        "wilson95_hi": 0.9878653693383534,
+        "target": 0.98,
+        "rule": "point_estimate"
+      },
+      "0.99": {
+        "threshold": 0.9329,
+        "n": 650,
+        "coverage": 0.42207792207792205,
+        "accuracy": 0.9907692307692307,
+        "wilson95_lo": 0.980008928708581,
+        "wilson95_hi": 0.9957627838266462,
+        "target": 0.99,
+        "rule": "point_estimate"
+      }
+    },
+    "cutoffs_wilson": {
+      "0.95": {
+        "threshold": 0.72,
+        "n": 1152,
+        "coverage": 0.7480519480519481,
+        "accuracy": 0.9626736111111112,
+        "wilson95_lo": 0.9501001065385737,
+        "wilson95_hi": 0.9721717083932429,
+        "target": 0.95,
+        "rule": "wilson95_lo"
+      },
+      "0.98": {
+        "threshold": 0.9329,
+        "n": 650,
+        "coverage": 0.42207792207792205,
+        "accuracy": 0.9907692307692307,
+        "wilson95_lo": 0.980008928708581,
+        "wilson95_hi": 0.9957627838266462,
+        "target": 0.98,
+        "rule": "wilson95_lo"
+      },
+      "0.99": null
+    }
+  },
+  "test_raw": {
+    "n": 1540,
+    "accuracy": 0.8701298701298701,
+    "mean_conf": 0.8042996124895904,
+    "ece_equal_10": 0.06705930755346687,
+    "at_0.90": {
+      "threshold": 0.9,
+      "n": 746,
+      "coverage": 0.4844155844155844,
+      "accuracy": 0.9932975871313673,
+      "wilson95_lo": 0.9844069880267816,
+      "wilson95_hi": 0.9971338314919695
+    },
+    "at_0.95": {
+      "threshold": 0.95,
+      "n": 514,
+      "coverage": 0.33376623376623377,
+      "accuracy": 0.9961089494163424,
+      "wilson95_lo": 0.9859251297734752,
+      "wilson95_hi": 0.9989322842339858
+    },
+    "cutoffs_point": {
+      "0.95": {
+        "threshold": 0.6142,
+        "n": 1228,
+        "coverage": 0.7974025974025974,
+        "accuracy": 0.9503257328990228,
+        "wilson95_lo": 0.9367072813170635,
+        "wilson95_hi": 0.9611355312302842,
+        "target": 0.95,
+        "rule": "point_estimate"
+      },
+      "0.98": {
+        "threshold": 0.7526,
+        "n": 1061,
+        "coverage": 0.688961038961039,
+        "accuracy": 0.9802073515551367,
+        "wilson95_lo": 0.9699315286140254,
+        "wilson95_hi": 0.9870184394389999,
+        "target": 0.98,
+        "rule": "point_estimate"
+      },
+      "0.99": {
+        "threshold": 0.8561,
+        "n": 851,
+        "coverage": 0.5525974025974026,
+        "accuracy": 0.9905992949471211,
+        "wilson95_lo": 0.9815603387683085,
+        "wilson95_hi": 0.9952289727280401,
+        "target": 0.99,
+        "rule": "point_estimate"
+      }
+    },
+    "cutoffs_wilson": {
+      "0.95": {
+        "threshold": 0.6725,
+        "n": 1169,
+        "coverage": 0.759090909090909,
+        "accuracy": 0.9632164242942686,
+        "wilson95_lo": 0.9508203948690493,
+        "wilson95_hi": 0.9725780677748012,
+        "target": 0.95,
+        "rule": "wilson95_lo"
+      },
+      "0.98": {
+        "threshold": 0.8558,
+        "n": 852,
+        "coverage": 0.5532467532467532,
+        "accuracy": 0.9894366197183099,
+        "wilson95_lo": 0.9800467796305998,
+        "wilson95_hi": 0.9944327707632425,
+        "target": 0.98,
+        "rule": "wilson95_lo"
+      },
+      "0.99": null
+    }
+  },
+  "threshold_transfer_point": {
+    "0.95": {
+      "fit_threshold": 0.6754,
+      "fit_n": 1206,
+      "fit_coverage": 0.7831168831168831,
+      "fit_accuracy": 0.9502487562189055,
+      "test_n": 1167,
+      "test_coverage": 0.7577922077922078,
+      "test_accuracy": 0.9640102827763496,
+      "test_wilson95_lo": 0.951710693094695,
+      "test_wilson95_hi": 0.9732650940548557,
+      "rule": "point_estimate",
+      "target": 0.95
+    },
+    "0.98": {
+      "fit_threshold": 0.891,
+      "fit_n": 814,
+      "fit_coverage": 0.5285714285714286,
+      "fit_accuracy": 0.9803439803439803,
+      "test_n": 774,
+      "test_coverage": 0.5025974025974026,
+      "test_accuracy": 0.9935400516795866,
+      "test_wilson95_lo": 0.9849676631492569,
+      "test_wilson95_hi": 0.9972376324624229,
+      "rule": "point_estimate",
+      "target": 0.98
+    },
+    "0.99": {
+      "fit_threshold": 0.9329,
+      "fit_n": 650,
+      "fit_coverage": 0.42207792207792205,
+      "fit_accuracy": 0.9907692307692307,
+      "test_n": 616,
+      "test_coverage": 0.4,
+      "test_accuracy": 0.9951298701298701,
+      "test_wilson95_lo": 0.9857802561840976,
+      "test_wilson95_hi": 0.9983423631072637,
+      "rule": "point_estimate",
+      "target": 0.99
+    }
+  },
+  "threshold_transfer_wilson": {
+    "0.95": {
+      "fit_threshold": 0.72,
+      "fit_n": 1152,
+      "fit_coverage": 0.7480519480519481,
+      "fit_accuracy": 0.9626736111111112,
+      "test_n": 1108,
+      "test_coverage": 0.7194805194805195,
+      "test_accuracy": 0.9729241877256317,
+      "test_wilson95_lo": 0.9616111114114221,
+      "test_wilson95_hi": 0.9809693182764496,
+      "rule": "wilson95_lo",
+      "target": 0.95
+    },
+    "0.98": {
+      "fit_threshold": 0.9329,
+      "fit_n": 650,
+      "fit_coverage": 0.42207792207792205,
+      "fit_accuracy": 0.9907692307692307,
+      "test_n": 616,
+      "test_coverage": 0.4,
+      "test_accuracy": 0.9951298701298701,
+      "test_wilson95_lo": 0.9857802561840976,
+      "test_wilson95_hi": 0.9983423631072637,
+      "rule": "wilson95_lo",
+      "target": 0.98
+    },
+    "0.99": null
+  },
+  "no_temperature": {
+    "note": "softmax(s) recovered as p_i**1.337398453966105, renormalised",
+    "test": {
+      "n": 1540,
+      "accuracy": 0.8701298701298701,
+      "mean_conf": 0.8854012024220875,
+      "ece_equal_10": 0.023334118755118434,
+      "at_0.90": {
+        "threshold": 0.9,
+        "n": 1061,
+        "coverage": 0.688961038961039,
+        "accuracy": 0.9783223374175306,
+        "wilson95_lo": 0.9676813132682098,
+        "wilson95_hi": 0.9855122270397594
+      },
+      "at_0.95": {
+        "threshold": 0.95,
+        "n": 905,
+        "coverage": 0.5876623376623377,
+        "accuracy": 0.9878453038674033,
+        "wilson95_lo": 0.978366932044988,
+        "wilson95_hi": 0.9931996612591666
+      },
+      "cutoffs_point": {
+        "0.95": {
+          "threshold": 0.7752,
+          "n": 1232,
+          "coverage": 0.8,
+          "accuracy": 0.950487012987013,
+          "wilson95_lo": 0.9369111221999091,
+          "wilson95_hi": 0.9612623385441748,
+          "target": 0.95,
+          "rule": "point_estimate"
+        },
+        "0.98": {
+          "threshold": 0.9037,
+          "n": 1053,
+          "coverage": 0.6837662337662338,
+          "accuracy": 0.98005698005698,
+          "wilson95_lo": 0.9697045494001453,
+          "wilson95_hi": 0.9869195417176961,
+          "target": 0.98,
+          "rule": "point_estimate"
+        },
+        "0.99": {
+          "threshold": 0.9644,
+          "n": 836,
+          "coverage": 0.5428571428571428,
+          "accuracy": 0.9904306220095693,
+          "wilson95_lo": 0.9812315251943289,
+          "wilson95_hi": 0.9951432314787274,
+          "target": 0.99,
+          "rule": "point_estimate"
+        }
+      },
+      "cutoffs_wilson": {
+        "0.95": {
+          "threshold": 0.8395,
+          "n": 1156,
+          "coverage": 0.7506493506493507,
+          "accuracy": 0.96280276816609,
+          "wilson95_lo": 0.950271477652952,
+          "wilson95_hi": 0.9722684021405819,
+          "target": 0.95,
+          "rule": "wilson95_lo"
+        },
+        "0.98": {
+          "threshold": 0.9644,
+          "n": 836,
+          "coverage": 0.5428571428571428,
+          "accuracy": 0.9904306220095693,
+          "wilson95_lo": 0.9812315251943289,
+          "wilson95_hi": 0.9951432314787274,
+          "target": 0.98,
+          "rule": "wilson95_lo"
+        },
+        "0.99": null
+      }
+    },
+    "threshold_transfer_point": {
+      "0.95": {
+        "fit_threshold": 0.8314,
+        "fit_n": 1197,
+        "fit_coverage": 0.7772727272727272,
+        "fit_accuracy": 0.9507101086048454,
+        "test_n": 1168,
+        "test_coverage": 0.7584415584415585,
+        "test_accuracy": 0.9623287671232876,
+        "test_wilson95_lo": 0.9498069899638695,
+        "test_wilson95_hi": 0.9718193886478579,
+        "rule": "point_estimate",
+        "target": 0.95
+      },
+      "0.98": {
+        "fit_threshold": 0.9669,
+        "fit_n": 886,
+        "fit_coverage": 0.5753246753246753,
+        "fit_accuracy": 0.9808126410835214,
+        "test_n": 822,
+        "test_coverage": 0.5337662337662338,
+        "test_accuracy": 0.9914841849148418,
+        "test_wilson95_lo": 0.9825270929584358,
+        "test_wilson95_hi": 0.9958689313266955,
+        "rule": "point_estimate",
+        "target": 0.98
+      },
+      "0.99": {
+        "fit_threshold": 0.9878,
+        "fit_n": 652,
+        "fit_coverage": 0.42337662337662335,
+        "fit_accuracy": 0.99079754601227,
+        "test_n": 638,
+        "test_coverage": 0.4142857142857143,
+        "test_accuracy": 0.9952978056426333,
+        "test_wilson95_lo": 0.9862672702524619,
+        "test_wilson95_hi": 0.998399568130374,
+        "rule": "point_estimate",
+        "target": 0.99
+      }
+    }
+  },
+  "isotonic": {
+    "n_knots": 42,
+    "knots_head": [
+      [
+        0.14917776539037983,
+        0.0
+      ],
+      [
+        0.1747598935952767,
+        0.0
+      ],
+      [
+        0.17873805916522673,
+        0.0
+      ],
+      [
+        0.19713049771207922,
+        0.0
+      ],
+      [
+        0.2111055226743291,
+        0.0
+      ],
+      [
+        0.2206610809752977,
+        0.0
+      ],
+      [
+        0.22329910427462563,
+        0.0
+      ],
+      [
+        0.2514902946686502,
+        0.3
+      ]
+    ],
+    "test": {
+      "n": 1540,
+      "accuracy": 0.8701298701298701,
+      "mean_conf": 0.8616769786041881,
+      "ece_equal_10": 0.00963583793250905,
+      "at_0.90": {
+        "threshold": 0.9,
+        "n": 1098,
+        "coverage": 0.712987012987013,
+        "accuracy": 0.9744990892531876,
+        "wilson95_lo": 0.9633909165720641,
+        "wilson95_hi": 0.982298675753911
+      },
+      "at_0.95": {
+        "threshold": 0.95,
+        "n": 595,
+        "coverage": 0.38636363636363635,
+        "accuracy": 0.9949579831932773,
+        "wilson95_lo": 0.9852820271330331,
+        "wilson95_hi": 0.9982838087393278
+      },
+      "cutoffs_point": {
+        "0.95": {
+          "threshold": 0.6667,
+          "n": 1125,
+          "coverage": 0.7305194805194806,
+          "accuracy": 0.9706666666666667,
+          "wilson95_lo": 0.9590920741431832,
+          "wilson95_hi": 0.9790378924035295,
+          "target": 0.95,
+          "rule": "point_estimate"
+        },
+        "0.98": {
+          "threshold": 0.9079,
+          "n": 1022,
+          "coverage": 0.6636363636363637,
+          "accuracy": 0.9843444227005871,
+          "wilson95_lo": 0.9747206412684793,
+          "wilson95_hi": 0.9903407641636061,
+          "target": 0.98,
+          "rule": "point_estimate"
+        },
+        "0.99": {
+          "threshold": 0.9375,
+          "n": 850,
+          "coverage": 0.551948051948052,
+          "accuracy": 0.991764705882353,
+          "wilson95_lo": 0.983099279771825,
+          "wilson95_hi": 0.9960052031080104,
+          "target": 0.99,
+          "rule": "point_estimate"
+        }
+      },
+      "cutoffs_wilson": {
+        "0.95": {
+          "threshold": 0.6667,
+          "n": 1125,
+          "coverage": 0.7305194805194806,
+          "accuracy": 0.9706666666666667,
+          "wilson95_lo": 0.9590920741431832,
+          "wilson95_hi": 0.9790378924035295,
+          "target": 0.95,
+          "rule": "wilson95_lo"
+        },
+        "0.98": {
+          "threshold": 0.9375,
+          "n": 850,
+          "coverage": 0.551948051948052,
+          "accuracy": 0.991764705882353,
+          "wilson95_lo": 0.983099279771825,
+          "wilson95_hi": 0.9960052031080104,
+          "target": 0.98,
+          "rule": "wilson95_lo"
+        },
+        "0.99": null
+      }
+    },
+    "threshold_transfer_point": {
+      "0.95": {
+        "fit_threshold": 0.6667,
+        "fit_n": 1172,
+        "fit_coverage": 0.7610389610389611,
+        "fit_accuracy": 0.9598976109215017,
+        "test_n": 1125,
+        "test_coverage": 0.7305194805194806,
+        "test_accuracy": 0.9706666666666667,
+        "test_wilson95_lo": 0.9590920741431832,
+        "test_wilson95_hi": 0.9790378924035295,
+        "rule": "point_estimate",
+        "target": 0.95
+      },
+      "0.98": {
+        "fit_threshold": 0.9697,
+        "fit_n": 531,
+        "fit_coverage": 0.3448051948051948,
+        "fit_accuracy": 0.9981167608286252,
+        "test_n": 498,
+        "test_coverage": 0.3233766233766234,
+        "test_accuracy": 0.9959839357429718,
+        "test_wilson95_lo": 0.9854766707600612,
+        "test_wilson95_hi": 0.9988979585519105,
+        "rule": "point_estimate",
+        "target": 0.98
+      },
+      "0.99": {
+        "fit_threshold": 0.9697,
+        "fit_n": 531,
+        "fit_coverage": 0.3448051948051948,
+        "fit_accuracy": 0.9981167608286252,
+        "test_n": 498,
+        "test_coverage": 0.3233766233766234,
+        "test_accuracy": 0.9959839357429718,
+        "test_wilson95_lo": 0.9854766707600612,
+        "test_wilson95_hi": 0.9988979585519105,
+        "rule": "point_estimate",
+        "target": 0.99
+      }
+    }
+  }
+}
