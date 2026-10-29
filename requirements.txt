@@ -1,0 +1,10 @@
+# Pinned to the versions used for the committed BANKING77 run (2026-10-29).
+# CPU torch wheels: pip honors the extra index below. On a CUDA machine, install
+# a matching GPU torch first; pip will then skip the CPU wheel if torch is already present.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+torchvision==0.29.2
+transformers==5.19.0
+huggingface_hub==2.3.0
+pillow==13.0.0
+matplotlib==3.11.2

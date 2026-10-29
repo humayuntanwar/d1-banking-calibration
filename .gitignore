@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.cache/
+hf_cache/
+.env
+.env.*
+.DS_Store
+*.safetensors
+huggingface/
+.huggingface/

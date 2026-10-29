@@ -1,0 +1,20 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+  "torch": "2.15.0+cpu",
+  "transformers": "5.19.0",
+  "device": "cpu",
+  "dtype": "bfloat16",
+  "cuda": false,
+  "cpu_count": 4,
+  "cpu_model": "Intel(R) Xeon(R) Processor",
+  "mem_gb": 15.63,
+  "model": "LiquidAI/d1-2B",
+  "started_unix": 1793253998.7470934,
+  "revision": "cfe5760ff5d5998f91d9ac56bd4b2dbd96996d41",
+  "batch": 1,
+  "started_utc": "2026-10-29T06:06:38Z",
+  "finished_utc": "2026-10-29T06:29:27Z",
+  "wall_seconds": 1367,
+  "n_tickets": 3080
+}
